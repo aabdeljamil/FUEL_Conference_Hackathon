@@ -1,23 +1,36 @@
 <!DOCTYPE html>
-<html lang="en" class="nojs">
+<html>
 <head>
-  <title>FUEL Conference Hackathon</title>
+    <title>Reverse Omegle</title>
+    <link rel="stylesheet" href="style.css" /> 
+    <script>
+        function openChat(){
+            window.location.href = "chat.html";
+        }
+    </script>
 </head>
 <body>
-    <main>
-        <div>
-            
-        </div>
-        <footer class="page-footer grey">
-            <div class="container">
-              <div class="row">
+
+    <h1 id="home" class="center">Reverse Omegle</h1>
+    <hr id="ree1">
+
+    <h3 class="center">Question of the day:</h3>
+    <h2 class="center">What is the color of the sky?</h2>
+
+    <!--two boxes for 2 options to choose--> 
+    <div onclick="openChat()" class="center" id="abc">Option A</div>
+    <div onclick="openChat()" class="center" id="efg">Option B</div>
+
+    <footer class="footer">
+        <hr id="ree2">
+        <div class="container">
+            <div class="row">
                 <div class="col s12">
-                  <h5 class="black-text center">Reverse Omegle</h5>
-                  <p class="black-text text-lighten-4">Made by Abdallah Abdeljamil, Elijah Wooten, and Emma Waters</p>
+                    <h4 class="center">Reverse Omegle</h4>
+                    <p class="center">Made by Abdallah Abdeljamil, Elijah Wooten, and Emma Waters</p>
                 </div>
-              </div>
             </div>
-          </footer>
-    </main>
+        </div>
+  </footer>
 </body>
 </html>

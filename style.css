@@ -1,0 +1,83 @@
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#abc{
+    float:left; 
+    background:blue;
+    width:48%;
+    height:280px;
+    margin-left: 1%;
+    color: white;
+    cursor: pointer;
+}
+#efg{
+    float:right;
+    background:red;
+    width:48%;
+    height:280px;
+    margin-right: 1%;
+    color: white;
+    cursor: pointer;
+}
+
+#home{
+    cursor: pointer;
+}
+
+#footerline{
+    position:relative;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    padding: 1rem;
+    width: 100%;
+    top: 80%;
+}
+
+#ree1{
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+#ree2{
+    width: 93%;
+    margin-right: 5%;
+}
+
+#message{
+    float: left;
+    height: 20px;
+    width: 90%;
+    margin-bottom: 1%;
+    border-style: solid;
+}
+
+#button{
+    float: right;
+    width: 9%;
+    height: 25px;
+}
+
+#list{
+    border-style: solid;
+    padding: 1%;
+}
+
+#from{
+    padding: 1%;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#text{
+    word-wrap: break-word;
+}
+
+#prompt{
+    padding: 1%;
+    opacity: 60%;
+}
