@@ -1,3 +1,7 @@
+body{
+    background-color: #ececec;
+}
+
 .center {
     display: flex;
     align-items: center;
@@ -5,21 +9,23 @@
 }
 #abc{
     float:left; 
-    background:blue;
+    background: #8fd6c9;
     width:48%;
     height:280px;
     margin-left: 1%;
     color: white;
     cursor: pointer;
+    font-family: Verdana;
 }
 #efg{
     float:right;
-    background:red;
+    background: #8fd6c9;
     width:48%;
     height:280px;
     margin-right: 1%;
     color: white;
     cursor: pointer;
+    font-family: Verdana;
 }
 
 #home{
@@ -51,23 +57,40 @@
 #message{
     float: left;
     height: 20px;
-    width: 90%;
+    width: 78%;
     margin-bottom: 1%;
     border-style: solid;
 }
 
 #button{
+    float: left;
+    margin-left: 9px;
+    width: 10%;
+    height: 25px;
+}
+
+#report{
     float: right;
-    width: 9%;
+    width: 10%;
     height: 25px;
 }
 
 #list{
     border-style: solid;
     padding: 1%;
+    height: 420px;
+    overflow:hidden;
+    overflow-y:scroll;
 }
 
 #from{
+    padding: 1%;
+    text-decoration: underline;
+    font-weight: bold;
+    text-align: right;
+}
+
+#anon{
     padding: 1%;
     text-decoration: underline;
     font-weight: bold;
@@ -75,6 +98,14 @@
 
 #text{
     word-wrap: break-word;
+    text-align: right;
+    padding-right: 3%;
+    padding-bottom: 1%;
+}
+
+.individual{
+    border-style: solid;
+    margin: 2%;
 }
 
 #prompt{

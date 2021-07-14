@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="style.css" /> 
     <script>
         function intoBox(){
+            var div = document.createElement("DIV");
             var node = document.createElement("DT");
             var node1 = document.createElement("DD");
 
@@ -12,24 +13,33 @@
             var textBox = document.getElementById("message");
             var messageToSend = textBox.value;
             if (messageToSend == ""){
-                alert("Type a message first");
                 return;
             }
             var textnode1 = document.createTextNode(messageToSend);
 
             node.id = "from";
             node1.id = "text";
+            div.className = "individual";
             
             node.appendChild(textnode);
             node1.appendChild(textnode1);
 
-            document.getElementById("list").appendChild(node);
-            document.getElementById("list").appendChild(node1);
+            div.appendChild(node);
+            div.appendChild(node1);
+
+            document.getElementById("list").appendChild(div);
+            //document.getElementById("list").appendChild(node1);
+
+            var chatHistory = document.getElementById("list");
+            chatHistory.scrollTop = chatHistory.scrollHeight;
 
             textBox.value = "";
         }
         function home(){
             window.location.href = "index.html";
+        }
+        function reported(){
+            alert("The person has been reported. Thank you.");
         }
     </script>
 </head>
@@ -38,14 +48,17 @@
     <hr id="ree1">
 
     <dl id="list">
-        <dt id="prompt">Start Chatting!</dt>
-        <dt id="from">Anonymous:</dt>
-        <dd id="text">Hello!</dd>
+        <dt id="prompt">Discuss your different viewpoints!</dt>
+        <div class="individual">
+            <dt id="anon">Anonymous:</dt>
+            <dd id="text1" style="padding-bottom: 1%;">Hello!</dd>
+        </div>
     </dl>
 
     <footer id="messageBox">
         <textarea name="text" rows="14" cols="10" wrap="soft" id="message" placeholder="Send a message..."></textarea>
         <button onclick="intoBox()" id="button">Send</button>
+        <button onclick="reported()" id="report">Report</button>
     </footer>
 </body>
 </html>
