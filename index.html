@@ -1,36 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Reverse Omegle</title>
+    <title>Chat Box</title>
     <link rel="stylesheet" href="style.css" /> 
-    <script>
-        function openChat(){
-            window.location.href = "chat.html";
-        }
-    </script>
+    <script src="index.js"></script>
 </head>
 <body>
 
-    <h1 id="home" class="center">Reverse Omegle</h1>
-    <hr id="ree1">
+    <div>
+        <h1 onclick="home()" id="home" class="title">Chat Box</h1>
+        <img onclick="home()" id="home" class="image" src="logo.png">
+    </div>
 
-    <h3 class="center">Question of the day:</h3>
-    <h2 class="center">What do you think of "Cancel Culture"?</h2>
+    <div class="pad">
+        <hr id="ree1">
 
-    <!--two boxes for 2 options to choose--> 
-    <h2 onclick="openChat()" class="center" id="abc">It is a positive thing</h2>
-    <h2 onclick="openChat()" class="center" id="efg">It is a negative thing</h2>
+        <h3 class="center">Question of the day:</h3>
+        <h2 class="center">What do you think of "Cancel Culture"?</h2>
 
-    <footer class="footer">
-        <hr id="ree2">
-        <div class="container">
-            <div class="row">
-                <div class="col s12">
-                    <h4 class="center">Reverse Omegle</h4>
-                    <p class="center">Made by Abdallah Abdeljamil, Elijah Wooten, and Emma Waters</p>
+        <!--two boxes for 2 options to choose--> 
+        <h2 onclick="openChat()" class="center" id="abc">It is a positive thing</h2>
+        <h2 onclick="openChat()" class="center" id="efg">It is a negative thing</h2>
+
+        <footer class="footer">
+            <hr id="ree2">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12">
+                        <h4 class="center">Chat Box</h4>
+                        <p class="center closer">Made by Abdallah Abdeljamil, Elijah Wooten, and Emma Waters</p>
+                    </div>
                 </div>
             </div>
-        </div>
-  </footer>
+        </footer>
+    </div>
 </body>
 </html>

@@ -3,62 +3,32 @@
 <head>
     <title>Chat Box</title>
     <link rel="stylesheet" href="style.css" /> 
-    <script>
-        function intoBox(){
-            var div = document.createElement("DIV");
-            var node = document.createElement("DT");
-            var node1 = document.createElement("DD");
-
-            var textnode = document.createTextNode("You:");
-            var textBox = document.getElementById("message");
-            var messageToSend = textBox.value;
-            if (messageToSend == ""){
-                return;
-            }
-            var textnode1 = document.createTextNode(messageToSend);
-
-            node.id = "from";
-            node1.id = "text";
-            div.className = "individual";
-            
-            node.appendChild(textnode);
-            node1.appendChild(textnode1);
-
-            div.appendChild(node);
-            div.appendChild(node1);
-
-            document.getElementById("list").appendChild(div);
-            //document.getElementById("list").appendChild(node1);
-
-            var chatHistory = document.getElementById("list");
-            chatHistory.scrollTop = chatHistory.scrollHeight;
-
-            textBox.value = "";
-        }
-        function home(){
-            window.location.href = "index.html";
-        }
-        function reported(){
-            alert("The person has been reported. Thank you.");
-        }
-    </script>
+    <script src="index.js"></script>
 </head>
 <body>
-    <h1 onclick="home()" id="home" class="center">Reverse Omegle</h1>
-    <hr id="ree1">
 
-    <dl id="list">
-        <dt id="prompt">Discuss your different viewpoints!</dt>
-        <div class="individual">
-            <dt id="anon">Anonymous:</dt>
-            <dd id="text1" style="padding-bottom: 1%;">Hello!</dd>
-        </div>
-    </dl>
+    <div>
+        <h1 onclick="home()" id="home" class="title">Chat Box</h1>
+        <img onclick="home()" id="home" class="image" src="logo.png">
+    </div>
+    
+    <div class="pad">
+        <hr id="ree1">
 
-    <footer id="messageBox">
-        <textarea name="text" rows="14" cols="10" wrap="soft" id="message" placeholder="Send a message..."></textarea>
-        <button onclick="intoBox()" id="button">Send</button>
-        <button onclick="reported()" id="report">Report</button>
-    </footer>
+        <dl id="list">
+            <dt id="prompt">Discuss your different viewpoints!</dt>
+            <div class="individual1">
+                <dt id="anon">Anonymous:</dt>
+                <dd id="text1" style="padding-bottom: 1%;">Hello!</dd>
+            </div>
+        </dl>
+
+        <footer id="messageBox">
+            <textarea onkeypress="onEnter()" name="text" rows="14" cols="10" wrap="soft" id="message" placeholder="Send a message..."></textarea>
+            <button onclick="intoBox()" id="button">Send</button>
+            <button onclick="reported()" id="report">Report</button>
+        </footer>
+    </div>
+
 </body>
 </html>

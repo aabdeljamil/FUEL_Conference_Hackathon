@@ -7,11 +7,33 @@ body{
     align-items: center;
     justify-content: center;
 }
+
+.title{
+    font-family:'Lucida Sans';
+    float: left;
+    display: block;
+    margin-left: 3%;
+}
+
+.image{
+    float: right;
+    width: 5%;
+    display: block;
+    position:absolute; 
+    left:615px; 
+}
+
+.pad{
+    padding-top: 6%;
+}
+
+
+
 #abc{
     float:left; 
     background: #8fd6c9;
     width:48%;
-    height:280px;
+    height:250px;
     margin-left: 1%;
     color: white;
     cursor: pointer;
@@ -21,7 +43,7 @@ body{
     float:right;
     background: #8fd6c9;
     width:48%;
-    height:280px;
+    height:250px;
     margin-right: 1%;
     color: white;
     cursor: pointer;
@@ -52,6 +74,7 @@ body{
 #ree2{
     width: 93%;
     margin-right: 5%;
+    margin-top: 1%;
 }
 
 #message{
@@ -104,7 +127,12 @@ body{
 }
 
 .individual{
-    border-style: solid;
+    background-color: lightblue;
+    margin: 2%;
+}
+
+.individual1{
+    background-color: lightgreen;
     margin: 2%;
 }
 
