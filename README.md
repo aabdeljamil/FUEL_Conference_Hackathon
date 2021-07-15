@@ -1,4 +1,4 @@
-# FUEL_Conference_Hackathon
+# FUEL Conference Hackathon
 
 This application was created during the Avanade FUEL Conference as a solution to the following prompt:
 
